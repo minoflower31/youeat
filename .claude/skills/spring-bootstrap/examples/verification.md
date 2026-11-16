@@ -1,0 +1,21 @@
+# Example Verification Checklist
+
+- `./gradlew build` passes
+- `src/main/resources/application.yml` plus `application-{local,stg,prod}.yml` exist
+- `src/test/resources/application-test.yml` exists
+- `.env.example`, `run.sh` exist (`run.sh` supports `start`/`stop`/`status`)
+- tests use `@ActiveProfiles("test")`
+- test profile boots with H2
+- if `bootJar` is used, plain `jar` is disabled
+- `API 전용`:
+  - API bootstrap classes compile
+  - `/api/**` error handling returns JSON response shape
+- `SSR용`:
+  - `templates/{layout,fragments,error}` exists
+  - `static/{css,js,images}` exists
+  - error pages are present
+- If Flyway is enabled:
+  - migration directories exist and match DB strategy
+  - `baseline-on-migrate` is enabled
+- If Querydsl is enabled:
+  - generated sources/build hooks are configured
