@@ -35,6 +35,5 @@ Make a skill as short as it can be while a human and an agent still follow it wi
 - Structure: split a step that branches on entry state or outcome into sub-blocks (`4a`, `4b`), in execution order. Number a list only when each item must run after the previous one; otherwise use bullets.
 - Commands: write a well-known command as prose. Keep a code block only for a non-obvious one.
 - Terms: one term per concept, in English, including the names of Korean output labels ("verification section" for `### 검증`). Korean stays only in output templates, a term-to-output mapping (`fixed` -> `수정`), and strings a script prints that the skill matches.
-- Literals: use placeholders (`<TASK_ID>`, `<PREFIX>`, `<BASE_BRANCH>`) instead of project values.
 - Pointers: name another file's step, not its number (`references/authoring.md` section 7). After a rename, grep every reference.
 - Checklist format: align it with the step headings last.

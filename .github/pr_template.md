@@ -20,7 +20,7 @@ What behaves differently, grouped by the flow a user or operator sees. One bulle
 | `<key>` | `<value>` | ... |
 
 ## Checklist
-- [ ] 프로젝트의 코드 스타일과 CLAUDE.md 규약(브랜치·커밋·마이그레이션)을 따랐습니다.
+- [ ] 프로젝트의 코드 스타일과 CLAUDE.md 규약(브랜치·커밋)을 따랐습니다.
 - [ ] 변경한 동작을 검증하는 테스트를 추가했습니다.
 - [ ] 런타임 검증을 했습니다.
 - [ ] 태스크 파일(docs/tasks/<TASK_ID>*.md)에 설계 변경과 검증 결과를 반영했습니다.

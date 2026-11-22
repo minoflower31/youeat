@@ -36,7 +36,6 @@ Checklist format:
 3. **Design Proposal**
    - Analyze existing code structure and affected components
    - Propose class/component structure, interfaces and data flow, required changes to existing code, new dependencies
-   - When CLAUDE.md names files deployed separately from the build artifact and the design changes them, state why an alternative without that change is not taken
    - Verify: map every requirement item to a design element, confirm no omissions
 
 4. **Blueprint Review**

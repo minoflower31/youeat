@@ -51,7 +51,7 @@ Checklist format:
    - Write or update tests if needed
 
 5. **Verify**
-   - Run project's existing build and test commands
+   - Run the build and test command from CLAUDE.md `## Commands`
    - Update `## Progress` with the result, per `.claude/rules/task-file.md` Progress
    - When the fix changes any file other than the task file, re-run the command in the verification results and rewrite them. List a check that needs a running instance in the unverified list instead of re-running it
    - If tests fail: report and stop. Don't proceed until the user instructs.

@@ -39,7 +39,6 @@ Checklist format:
    - Pull latest: `git pull`
    - Create branch from `<BASE_BRANCH>`: `git checkout -b <type>/<TASK_ID>-<description>`
    - Branch type based on task nature (feat, fix, refactor, etc.)
-   - For concurrency / packet-parsing / performance-critical code: enumerate edge cases explicitly, and apply `.claude/rules/java-spring/throughput.md` (hot-path judgement, forbidden patterns, ownership javadoc). That file owns the criteria; don't restate them here.
    - Build one `## Progress` step at a time, in order. Keep `## Progress` per `.claude/rules/task-file.md` Progress through Step 3.
    - Write code following CLAUDE.md conventions
    - Write unit tests using project's existing test framework
@@ -47,7 +46,7 @@ Checklist format:
 
 3. **Verification**
    - Scope the build to what changed. Decide from `git diff --name-only origin/<BASE_BRANCH>...HEAD`:
-     - Diff touches Java / build config / migrations -> run the full build and test command.
+     - Diff touches Java / build config / migrations -> run the build and test command from CLAUDE.md `## Commands`.
      - Diff touches only static resources or templates (no compiled source) -> the compile+test cycle proves nothing about it. State that and skip it; those changes are verified by `workflow`'s Runtime Verification step against a running app instead.
    - Re-runs: re-run the full build only when a later revision touches compiled source. Don't re-run it for a revision confined to static resources, templates, tests already run, or docs.
 

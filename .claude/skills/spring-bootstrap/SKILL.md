@@ -173,10 +173,10 @@ In every `(approval required)` step, collect all decisions via a single `AskUser
    - Update `CLAUDE.md` after bootstrap completes
    - In `## Project Overview`, record:
      - project name / description
+     - exposure, when the user stated who can reach the app; otherwise leave the placeholder
      - selected architecture (`API 전용` or `SSR용`)
      - tech stack
-   - In `## Coding Conventions`, record only:
-     - package structure: copy the tree in `examples/structures.md` verbatim as a fenced code block, substituting only the root package and application class name. Don't compress it (bullets, brace shorthand, prose).
+   - In `## Commands`, record the build and test command Step 6 ran and the command that runs one test class, each with the directory it runs from when `workingDirectory` is not `./`.
    - Don't record facts derivable from project files (profile list, yml values, log paths, error page locations, etc.). Let future sessions read those from source.
 
 8. **Git 초기화 및 첫 커밋**

@@ -1,6 +1,6 @@
 # Skill Authoring Patterns
 
-Repo-specific patterns for `.claude/skills/<name>/SKILL.md`. `CLAUDE.md` holds the principles; this file holds the patterns that satisfy them. Read it before authoring or restructuring a procedure skill.
+Repo-specific patterns for `.claude/skills/<name>/SKILL.md`. `.claude/rules/skill-authoring.md` holds the principles; this file holds the patterns that satisfy them. Read it before authoring or restructuring a procedure skill.
 
 Every pattern below was extracted from a defect found in a real skill. Each names the skill it came from, so the fix can be read in context.
 

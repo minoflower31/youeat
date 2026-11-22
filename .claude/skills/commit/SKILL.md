@@ -32,7 +32,7 @@ Checklist format:
    - If no uncommitted changes, skip to Step 6
 
 2. **Pre-commit Verification**
-   - Run project's existing build and test commands
+   - Run the build and test command from CLAUDE.md `## Commands`
    - If tests fail: report and stop. Don't proceed until the user instructs.
 
 3. **Stage Changes**

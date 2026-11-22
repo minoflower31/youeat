@@ -18,11 +18,12 @@ Keep the folder matching this project's stack. Delete the rest.
 |---|---|
 | `comment.md` | Every stack. Take it as-is |
 | `task-file.md` | Every project that keeps `docs/tasks/` task files. Take it as-is |
-| `java-spring/` | Java + Spring Boot + Gradle + Flyway. The cases in `throughput.md` are generalized; when porting, replace them with cases from that project's real code |
+| `skill-authoring.md` | Every project that keeps `.claude/skills/`. Take it as-is |
+| `java-spring/` | Java + Spring Boot + Gradle + Flyway |
 
-Stack rules live only in stack folders. `comment.md` and `task-file.md` are the exceptions: comment
+Stack rules live only in stack folders. `comment.md`, `task-file.md` and `skill-authoring.md` are the exceptions: comment
 discipline does not depend on the language, and real violations came from both Java and shell;
-`task-file.md` governs task documents, not code. Before adding another exception: don't put an
+`task-file.md` governs task documents and `skill-authoring.md` governs skill files, not code. Before adding another exception: don't put an
 invented generalization at the root; a rule goes there only when the same violation was actually
 observed in different stacks. Otherwise it goes in a stack folder or a new sibling (`node/`,
 `python/`, ...).

@@ -75,7 +75,7 @@ When the lookup returns more than one branch, stop and ask the user which one be
 - Find the task file at `<MAIN_CHECKOUT>/docs/tasks/<TASK_ID>-*.md`. When none exists, stop and suggest `/planning`.
 - Name the branch per CLAUDE.md Git Conventions: `<description>` from the task file name, `<type>` `fix` when the task's Requirements correct a defect, otherwise the type that fits (`feat` for new behavior).
 - Fetch origin, then create the worktree at `<WORKTREE_ABS>` on that new branch from `origin/<BASE_BRANCH>`.
-- Copy the gitignored files CLAUDE.md `## Worktree Environment` lists into the worktree with `cp -n`.
+- Copy the gitignored files CLAUDE.md `## Worktree Environment` lists into the worktree with `cp -Rn`.
 
 **0b. Worktree exists (resume)**
 - Resume at whichever is later: the Run State `Step`, or the step the environment shows.

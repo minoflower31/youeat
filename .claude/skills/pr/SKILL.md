@@ -63,8 +63,6 @@ Checklist format:
 
 6. **Create PR**
    - If PR already exists: in skip-approval mode update it with `gh pr edit` without asking; otherwise ask if user wants to update with `gh pr edit`, then stop or update per user choice.
-   - Check CLAUDE.md for reviewer list
-   - If reviewers defined, add `--reviewer` flag
    ```bash
    gh pr create --base <BASE_BRANCH> --head <branch> \
                 --title "<type>: <TASK_ID> <description>" \

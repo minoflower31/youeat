@@ -67,5 +67,5 @@ When a later change (a fix, a review finding, a re-run) changes what a section s
 - **Verification**: `planning` writes the first items and sets their bar. When a requirement is added, changed or removed, add, reword or remove only the items that prove it; leave every other item as it is. Write each item as what it proves in domain words.
   - **Results** subsection, last in the section.
     - Passed items: a list with no heading, one bullet per verification item, without how it was checked.
-    - Failed items (checked and found wrong) and unverified items (not checked, needing the user's or reviewer's environment, or checked only on screen with no test code): one bullet each, `<item>: <reason>`, under a failed label line and an unverified label line. Leave out a label with no items.
+    - Failed items (checked and found wrong) and unverified items (not checked, or needing the user's or reviewer's environment): one bullet each, `<item>: <reason>`, under a failed label line and an unverified label line. Leave out a label with no items.
     - The verification command in a `<details>` block, with the environments, cases and query steps a run used as comments.

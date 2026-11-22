@@ -56,8 +56,8 @@ failure.
 - `throughput` the code is correct once but not at volume: per-item DB round trip or file I/O
   inside a hot-path loop, I/O held inside a lock, unbounded in-memory accumulation, blocking
   work on an event loop, a shared field written by one thread and read by another without
-  `volatile`/`final`/`Atomic*`, `ThreadLocal` set without remove. The bar is the project's
-  contract volume (see `.claude/rules/java-spring/throughput.md`), not today's traffic.
+  `volatile`/`final`/`Atomic*`, `ThreadLocal` set without remove. The bar is the volume the
+  project must handle, not today's traffic.
 
 ## Every finding names its failure
 
